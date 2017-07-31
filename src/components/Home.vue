@@ -1,13 +1,15 @@
 <template>
 <div>
+  <el-row>
     <el-col :span="24">
-    <el-menu :router="rout" theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
-      <el-menu-item index="1"><router-link to="/user/foo">/user/foo</router-link></el-menu-item>
-      <el-menu-item index="1"><router-link to="/user/foo/profile">/user/foo/profile</router-link></el-menu-item>
-      <el-menu-item index="1"><router-link to="/user/foo/posts">/user/foo/posts</router-link></el-menu-item>
-    </el-menu>
+      <el-menu :router="rout" theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
+        <el-menu-item index="1"><router-link to="/user/foo">/user/foo</router-link></el-menu-item>
+        <el-menu-item index="1"><router-link to="/user/foo/profile">/user/foo/profile</router-link></el-menu-item>
+        <el-menu-item index="1"><router-link to="/user/foo/posts">/user/foo/posts</router-link></el-menu-item>
+      </el-menu>
     </el-col>
-    <router-view></router-view>
+  </el-row>
+  <router-view></router-view>
   </div>
 </template>
 
